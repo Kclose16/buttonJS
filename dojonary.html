@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn" id="btn" onmouseenter="over()">Login</button></li>
+            <script type="text/javascript">
+                document.getElementById("btn").addEventListener("mouseover", mouseOver);
+                document.getElementById("btn").addEventListener("mouseout", mouseOut);
+                function mouseOut() {
+                     document.getElementById("btn").style.color = "black";
+                     document.getElementById("btn").innerHTML = "Login";
+                }
+                function mouseOver() {  
+                     document.getElementById("btn").style.color = "black";
+                     document.getElementById("btn").innerHTML = "Logout";
+                }
+              
+
+            
+            </script>
+        </ul>
+    </div>    
+    <div class="flex-container">
+        <div class="user-card">
+            <div class="card-header"><h1>GameZone</h1>
+                <img src="pronunciation.png" alt="Ninja" class="avatar-m"> 
+            </div>
+            <div class="card-body">
+                <h2>Noun</h2>
+                <h3>
+                    Plural: Ninjas
+                </h3>
+                <p>A Practictioner skilled in the Japenese art of Ninjutsu</p>
+                <p>
+                    <a href="#">
+                        <img src="gear.png" alt="gear" class="icon-s"> 
+                        edit definition </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-container2">
+        <div class="user-card2">           
+            <div class="card-header2">
+                <h2>Connection Request</h2>
+            </div>
+            <div>
+            <div class="card-body2">
+                <h2>Dojonary is Defined By <font size=6>You!</font></h2>
+            </div>
+            <div>
+
+              <button class="b1" id="b1" onmouseenter="over()">Add Definition</button>
+              <script type="text/javascript">
+                document.getElementById("b1").addEventListener("mouseover", mouseOver);
+                document.getElementById("b1").addEventListener("mouseout", mouseOut);
+                function mouseOut() {
+                    document.getElementById("b1").style.color = "black";
+                    document.getElementById("b1").innerHTML = "Ninja";
+                }
+                function mouseOver() {  
+                    document.getElementById("b1").style.color = "red";
+                }
+                function over() {
+                    document.getElementById("b1").innerHTML = "Enter Text";
+                }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
